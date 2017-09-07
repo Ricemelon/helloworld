@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<title>Hello my name is Ammar</title>
+<style>
+body{
+    color: blue;
+    font-size: 36px;
+}
+div{
+    display: inline-block;
+    color: red;
+    font-size: 48px;
+}
+div1{
+    display: inline-block;
+    color: green;
+    font-size: 20px;
+}
+
+</style>
+</head>
+<body>
+<canvas id="MyCanvas" width="500" height="500"></canvas>
+<script>
+
+var canvas=document.getElementById('MyCanvas')
+var ctx = canvas.getContext("2d")
+var x=50
+var y=50
+ctx.moveTo(100,100)
+ctx.lineTo(500,500)
+ctx.stroke()
+function ball(){
+    x= x+5
+    y=y+5
+    ctx.beginPath()
+    ctx.arc(x,y,10,0,2*Math.PI)
+    ctx.stroke()
+    requestAnimationFrame(ball)
+}
+
+ball()
+
+</script>
+<map name="continents_map">
+        <area shape="circle" coords="70,70,10" href="#rip">
+    </map>
+    <div>
+    <h3 id="rip">Herro</h3>
+    <p>
+        sayonara
+    </p>
+    </div>
+Hello
+    <div>
+    My Good Friend
+    </div>
+    <div1>
+    Rip
+    </div1>
+</body>
+</html>
