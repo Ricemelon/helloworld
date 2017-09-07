@@ -18,15 +18,17 @@ div1{
     font-size: 20px;
 }
 
+
 </style>
 </head>
 <body>
+<div id="word1"> mice </div>
 <canvas id="MyCanvas" width="500" height="500"></canvas>
 <button id= "button" onclick= "same()">ZERO</button>
 <script>
 
 function same(){
-    return <p>bites</p>
+return document.getElementById("word1").innerText = "same"
 }
 
 var canvas=document.getElementById('MyCanvas')
@@ -37,6 +39,7 @@ ctx.moveTo(100,100)
 ctx.lineTo(500,500)
 ctx.stroke()
 function ball(){
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
     x= x+5
     y=y+5
     ctx.beginPath()
